@@ -20,37 +20,27 @@ struct RandomActivity: View {
 
     var body: some View {
         ZStack {
-            Image("fon")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-                .opacity(0.9)
-                .offset(y: 40)
-
             VStack {
-                Spacer()
                 TextView(opacity: $textOpacity, content: content)
                     .offset(y: -30)
                 .padding()
-                Spacer()
                 HStack {
                     MainButtonView(typeActivity: typeActivity, viewModel: viewModel)
                     Spacer()
                 }
                 .offset(y: 4)
                 .padding(25)
-                Spacer()
-                Spacer()
             }
-            VStack {
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                WindmillView()
-                Spacer()
-                Spacer()
-            }
+            Spacer()
+//            VStack {
+//                Spacer()
+//                Spacer()
+//                Spacer()
+//                Spacer()
+//                WindmillView()
+//                Spacer()
+//                Spacer()
+//            }
         }
     }
 }

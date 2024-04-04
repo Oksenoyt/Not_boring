@@ -11,7 +11,7 @@ import SwiftUI
 struct Not_boringApp: App {
     var body: some Scene {
         WindowGroup {
-            GeneralView()
+            HomeView()
         }
     }
 }

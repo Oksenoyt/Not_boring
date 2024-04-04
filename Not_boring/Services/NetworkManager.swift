@@ -18,7 +18,7 @@ class NetworkManager {
 
     private init() {}
 
-    func fetchData(from url: String, completion: @escaping(Result<Activity,NetworkError>) -> Void ) {
+    func fetchData(from url: String, completion: @escaping(Result<Activity, NetworkError>) -> Void ) {
         guard let url = URL(string: url) else {
             completion(.failure(.invalidURL))
             return

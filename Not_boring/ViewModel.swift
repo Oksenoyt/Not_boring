@@ -7,19 +7,19 @@
 
 import Foundation
 
-enum TypeActivity: String {
-    case education = "education"
-    case recreational = "recreational"
-    case social = "social"
-    case diy = "diy"
-    case charity = "charity"
-    case cooking = "cooking"
-    case relaxation = "relaxation"
-    case music = "music"
-    case busywork = "busywork"
-    case person = "for one"
-    case company = "for company"
-    case general
+enum TypeActivity: String, CaseIterable {
+    case education = "book.circle.fill"
+    case recreational = "flame.circle.fill"
+    case social = "camera.macro.circle.fill"
+    case diy = "scissors.circle"
+    case charity = "hand.raised.circle.fill"
+    case cooking = "fork.knife.circle.fill"
+    case relaxation = "photo.artframe.circle.fill"
+    case music = "headphones.circle"
+    case busywork = "fan.desk.fill"
+    case person = "person.crop.circle"
+    case company = "figure.2.circle.fill"
+    case general = "questionmark.circle.fill"
 }
 
 class ViewModel: ObservableObject {
