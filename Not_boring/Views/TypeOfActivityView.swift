@@ -34,29 +34,24 @@ struct TypeOfActivityView: View {
 
     var body: some View {
         ZStack {
-            Image("fon")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-                .opacity(0.9)
-                .offset(y: 40)
+Spacer()
             
-            VStack {
-                Spacer()
-                TextView(opacity: $textOpacity, content: content)
-                .padding()
-                Spacer()
-                HStack {
-                    MainButtonView(typeActivity: typeActivity, viewModel: viewModel)
-                    Spacer()
-                    PickerView(viewModel: viewModel, options: option)
-//                        .offset(y: -18)
-                }
-                .padding(25)
-                .offset(y: 18)
-                Spacer()
-                Spacer()
-            }
+//            VStack {
+//                Spacer()
+//                TextView(opacity: $textOpacity, content: content)
+//                .padding()
+//                Spacer()
+//                HStack {
+//                    MainButtonView(typeActivity: typeActivity, viewModel: viewModel)
+//                    Spacer()
+//                    PickerView(viewModel: viewModel, options: option)
+////                        .offset(y: -18)
+//                }
+//                .padding(25)
+//                .offset(y: 18)
+//                Spacer()
+//                Spacer()
+//            }
         }
     }
 }
